@@ -50,5 +50,5 @@ npm run test
 
 ## License
 
-This application was developed as part of the Web Application Development Course in Reichman University.
+This application was developed as part of the Web Application Development Course in Reichman University.  
 I don't own any of the photos in this app, except for the admin's profile picture.
