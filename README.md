@@ -1,6 +1,6 @@
 # CabiNet
 
-A social netowrk for air and cabin crew.
+A social netowrk for air and cabin crew  
 ✈ Socialize at new heights ✈
 
 ## Prerequisites
@@ -9,7 +9,7 @@ You need [npm](https://www.npmjs.com/get-npm) installed to run the application l
 
 ## Installation
 
-- Run the following commands in your terminal:
+Run the following commands in your terminal:
 
 ```
 cd client
@@ -20,20 +20,20 @@ cd ../server
 npm install
 ```
 
-## Running the app
+## Run
 
-- Run this command in your terminal from [/server] directory and
+- Run this command in your terminal from `/server` directory and
 
 ```
 npm run start
 ```
 
-- then go to the url in the browser:
-  (http://localhost:8090)
+- then go to the url in your browser: http://localhost:8090
 
-## Testing
 
-- run the following command in your terinal from [/server] directory:
+## Test
+
+run the following command in your terminal from `/server` directory:
 
 ```
 npm run test
@@ -41,8 +41,8 @@ npm run test
 
 ## More about this project
 
-- More information in file: (/server/public/readme.html)
-- Available also after installing the server in path: (http://localhost:8090/readme.html)
+- More information in file: `/server/public/readme.html`
+- Available also after installing the server at: http://localhost:8090/readme.html
 
 ## Author
 
