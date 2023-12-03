@@ -1,0 +1,157 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+.hello-text {
+  text-align: center;
+  color: #555555;
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 60px;
+  margin-left: 20px;
+  width: 1000px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.animated-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.appear1 {
+  white-space: nowrap;
+  animation: showup 7s;
+}
+
+.appear2 {
+  width: 0px;
+  animation: reveal 7s;
+  animation-fill-mode: forwards;
+}
+
+span#appear2 {
+  animation: slidein 7s;
+  animation-fill-mode: forwards;
+}
+
+.appear3 {
+  white-space: nowrap;
+  animation: popafter 7s;
+}
+
+.showup {
+  animation-name: showup;
+  -webkit-animation-name: showup;
+  animation-duration: 7s;
+  visibility: visible;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 410px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    width: 410px;
+  }
+}
+
+@keyframes popafter {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.leaflet-bottom.leaflet-right {
+  display: none;
+}
+
+.leaflet-marker-icon.selected-wrong {
+  --color: salmon;
+}
+
+.leaflet-marker-icon.selected-correct {
+  --color: lime;
+}
+
+.leaflet-marker-icon.selected-wrong,
+.leaflet-marker-icon.selected-correct {
+  background: radial-gradient(var(--color), transparent 110%);
+  border-radius: 99999px;
+  box-shadow: 0px 0px 50px 5px var(--color);
+}
+
+.hide-tooltips .leaflet-tooltip {
+  display: none;
+}
+
+@media print {
+  /* Define how the content should appear when printing */
+  .modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow: auto; /* Allow scrolling for long content */
+  }
+
+  .modal button {
+    display: none; /* Hide the "Print" button when printing */
+  }
+
+  .overflow-content {
+    /* Style the overflowing content as needed */
+    max-height: none; /* Allow the content to expand vertically */
+    overflow: visible; /* Show all content without overflow */
+  }
+}

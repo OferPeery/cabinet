@@ -1,0 +1,314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`static routes GET /readme.html should get readme.html file successfully 1`] = `
+"<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Readme - CabiNet - Ofer Peery</title>
+    <link rel="stylesheet" href="readme.css" />
+  </head>
+
+  <body>
+    <div class="header">Readme</div>
+    <div class="sub-header">Social network name: CabiNet</div>
+
+    <main>
+      <div class="content-box">
+        <div class="info-header">Installation:</div>
+        <div class="info-box">
+          <div class="info-text">
+            <p>
+              <span class="strong">For installing - run the following commands in your terminal:</span><br/>
+                <ul>
+                  <li>cd client</li>
+                  <li>npm install</li>
+                  <li>npm run build</li>
+                  <br/>
+                  <li>cd ../server</li>
+                  <li>npm install</li>
+                </ul>
+            </p>
+
+            <p>
+              <span class="strong">For running the app, run this command in your terminal from /server directory and then go to the url in the browser:</span><br/>
+                <ul>
+                  <li>npm run start</li>
+                  <li>http://localhost:8090</li>
+                </ul>
+            </p>
+
+            <p>
+              <span class="strong">For testing, run the following command in your terinal from /server directory:</span><br/>
+                <ul>
+                  <li>npm run test</li>
+                </ul>
+            </p>
+
+            <p>
+              <span class="strong">Note:</span><br/>
+              <p>Currently registered users (other than "admin") have the password: a1234</p>
+            </p>
+
+          </div>
+        </div>
+
+        <div class="info-header">Additional pages:</div>
+        <div class="info-box">
+          <div class="info-text">
+            <p>
+              <span class="strong">(1)  Quiz - Emergency Training:</span>
+              <br />This static
+              page allows the crew-member users to train for their periodically
+              emergency exams, by answering shuffled multiple-choise questions
+              similar to those in the exams.
+              <br /> The users can see their score
+              during the quiz, get feedback after each answering and see a full
+              report which they can print at the end of the quiz, to learn from
+              it. 📚
+            </p>
+            <img class="example-img" src="readme/quiz-example.png" alt="quiz example" height="450" width="600"/>
+            <img class="example-img" src="readme/quiz-print-report.png" alt="quiz example" height="450" width="360"/>
+
+            <br>
+              <span class="strong">(2) Map - Airport Challenge:</span>
+              <br />This static page provides a fun and
+                visual game to the crew-member users to play around with
+                airports around the world. <br/> This page shows the users an interactive world map
+                with pins of airports. The users can zoom in and out by the buttons or by scrolling anytime.
+                <br/>First - hovering over those pins shows
+                a tooltip with its IATA code (like: JFK) and national information. Later -
+                in "Play" mode, a IATA code appears on the screen and the user
+                should click the corresponding pin. <br/>
+                If the user is wrong - the pin glows in red, and the user can try again until succeeds. <br/>
+                If the user is correct - the pin glows in green, and a confety animation is shown 🎉
+            </p>
+            <img class="example-img" src="readme/map-info-example.png" alt="map example" height="400" width="600"/>
+            <img class="example-img" src="readme/map-game-example.png" alt="map example" height="400" width="600"/>
+          </div>
+        </div>
+
+        <div class="info-header">Additional features:</div>
+        <div class="info-box">
+          <div class="info-text">
+            <p>
+              <span class="strong"> (1) Upload a photo to a post:</span>
+              <br />Users can choose to attach a photo to their post - to grant some life to their posts. 😎
+              <br />Clicking the "+" button at the left-bottom corner of the screen opens the creating-post modal with a dedicated button to choose a photo from the user's file system.
+              <br />A styled quick view is shown before posting.
+              <br /><img class="example-img" src="readme/upload-photo.png" alt="darkmode example" height="300" width="300"/>
+            </p>
+            
+            
+            <p>
+              <span class="strong"> (2) Persist Dark mode:</span><br />
+              Logged-in users can switch between dark and light modes, applied to the UI of the whole application - by the toggle at top bar.
+              <br /> This information is persist and saved in the server's DB, such that users will see their personal prefference in their next login.
+              <br /><img class="example-img" src="readme/darkmode-example.png" alt="darkmode example" height="110" width="210"/>
+            </p>
+          </div>          
+        </div>
+
+        <div class="info-header">What was hard to do:</div>
+        <div class="info-box">
+          <div class="info-text">
+            <ul>
+              <li><span class="strong">Modeling the data </span><br />
+                which collections there should be? for example: should a 'user' entity hold the post created by this user, or should the posts be in another collection? </li>
+                <br />
+              <li><span class="strong">Dealing with a large technological stack</span><br/>
+                which npm libraries to choose and how to work with them properly? For example in the client: React, Joi, ahooks, axios and MUI. In the server: express, multer, bcrypt, jest, Joi</li>
+                <br />
+              <li><span class="strong">Working End-to-end on both client and server</span><br/>
+                and develop the features such that the right data gets to the right place, synchronizing all the async requests and refresh the UI upon backend modifications.</li>
+                <br />
+              <li><span class="strong">Establishing the whole infrastructure</span><br/>
+                of the project - the routes (and the protected ones) in both client and server, the user and authenticating management, how to maintain the state in the client.</li>
+            </ul>  
+          </div>
+        </div>
+
+        <div class="info-header">Submitter Information:</div>
+        <div class="info-box">
+          <div class="info-text">
+            <p>
+              <span class="strong">I submit the project by myself. Ofer Peery - ID: 206021024</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="info-header">Server Routes:</div>
+        <div class="info-box">
+          <div class="info-text">
+            <p> NOTE: <br/>
+              <ul>
+                <li>Except for the login, register and readme.html routes - a valid access-token embeded in a cookie is required.</li>
+                <li>To request admin's data - a valid cookie of an admin is required.</li>
+                <li>Valid inputs must be sent along with the request (in body / query-string / params), enforced by the server.</li>
+              </ul>
+              <Table>
+                <tr>
+                  <th><span class="strong">auth</span></th>
+                  <th><span class="strong">users</span></th>
+                  <th><span class="strong">posts</span></th>
+                  <th><span class="strong">admin-control</span></th>
+                  <th><span class="strong">images and files</span></th>
+                </tr>
+                        <!-- AUTH -->
+                <tr>
+                  <td>
+                    <table>
+                      <tr>
+                        <td>POST</td>
+                        <td>/api/auth/register</td> 
+                      </tr>
+                      <tr>
+                        <td>POST</td>
+                        <td>/api/auth/login</td> 
+                      </tr>
+                      <tr>
+                        <td>POST</td>
+                        <td>/api/auth/logout</td> 
+                      </tr>
+                    </table>
+                  </td>
+                  <!-- USERS -->
+                  <td>
+                  <table>
+                    <tr>
+                      <td>GET</td>
+                      <td>/api/users</td> 
+                    </tr>
+                    <tr>
+                      <td>GET</td>
+                      <td>/api/users/many?userIds[]={...}</td> 
+                    </tr>
+                    <tr>
+                      <td>GET</td>
+                      <td>/api/users/:id</td> 
+                    </tr>
+                    <tr>
+                      <td>PUT</td>
+                      <td>/api/users/:id</td> 
+                    </tr>
+                    <tr>
+                      <td>DELETE</td>
+                      <td>/api/users/:id</td> 
+                    </tr>
+                    <tr>
+                      <td>GET</td>
+                      <td>/api/users/:id/followers</td> 
+                    </tr>
+                    <tr>
+                      <td>GET</td>
+                      <td>/api/users/:id/followees</td> 
+                    </tr>
+                    <tr>
+                      <td>POST</td>
+                      <td>/api/users/follow</td> 
+                    </tr>
+                    <tr>
+                      <td>POST</td>
+                      <td>/api/users/unfollow</td> 
+                    </tr>
+                  </table>
+                </td>
+                       <!-- POSTS -->
+                <td>
+                  <table>
+                    <tr>
+                      <td>GET</td>
+                      <td>/api/posts/feed?userId={...}</td> 
+                    </tr>
+                    <tr>
+                      <td>POST</td>
+                      <td>/api/posts</td> 
+                    </tr>
+                    <tr>
+                      <td>POST</td>
+                      <td>/api/posts/:postId/like</td> 
+                    </tr>
+                    <tr>
+                      <td>POST</td>
+                      <td>/api/posts/:postId/unlike</td> 
+                    </tr>
+                  </table>
+                </td>
+
+                       <!-- ADMIN-CONTROLS -->
+                <td>
+                  <table>
+                    <tr>
+                      <td>GET</td>
+                      <td>/api/feature-flags</td> 
+                    </tr>
+                    <tr>
+                      <td>PUT</td>
+                      <td>/api/feature-flags/:id</td> 
+                    </tr>
+                    <tr>
+                      <td>GET</td>
+                      <td>/api/feature-flags/values</td> 
+                    </tr>
+                    <tr>
+                      <td>GET</td>
+                      <td>/api/activity-log</td> 
+                    </tr>
+                  </table>
+                </td>
+
+                      <!-- IAMGES AND FILES -->
+                <td>
+                  <table>
+                    <tr>
+                      <td>GET</td>
+                      <td>/readme.html</td> 
+                    </tr>
+                    <tr>
+                      <td>GET</td>
+                      <td>/images/:name</td> 
+                    </tr>
+                    <tr>
+                      <td>POST</td>
+                      <td>/images/upload</td> 
+                  </table>
+                </td>
+              </tr>
+            </Table> 
+            </p>
+          </div>
+        </div>
+
+          <div class="info-header">Extra:</div>
+          <div class="info-box">
+            <div class="info-text">
+              <p>
+                <span class="strong">Server</span><br/>
+                <ul>
+                  <li>The passwords are hashed and validated by "bcrypt" and the ACCESS_TOKEN_SECRET in ".env" file (shared for you to succeed checking)</li>
+                  <li>Input validations with "Joi" package</li>
+                </ul>
+              </p>
+              <p>
+                <span class="strong">Client</span>
+                <ul>
+                  <li>Some css animations: Text animation in login page and the Airplane-Loader when getting into the application</li>
+                  <li>Click on the top right avatar to upload a profile picture and update your airline bio</li>
+                  <li>Reuse of the "Following Users" page to show the likes list of a post</li>
+                </ul>
+                <br />
+                
+                <img class="example-img" src="readme/profile-menu.png" alt="darkmode example" height="110" width="210"/>
+                <img class="example-img" src="readme/choose-profile-picture.png" alt="darkmode example" height="300" width="350"/>
+                <img class="example-img" src="readme/update-bio.png" alt="darkmode example" height="300" width="400"/>
+                <img class="example-img" src="readme/airline-bio.png" alt="darkmode example" height="400" width="130"/>
+                <img class="example-img" src="readme/likes-user-list.png" alt="darkmode example" height="360" width="260"/>
+              </p>
+            </div>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>
+"
+`;
