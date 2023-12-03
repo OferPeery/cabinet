@@ -1,7 +1,7 @@
 # CabiNet
 
-A social netowrk for air and cabin crew  
-✈ Socialize at new heights ✈
+**✈ A social netowrk for air and cabin crew**
+![Application Screenshot](/server/public/readme/markdown/screenshots.png)
 
 ## Prerequisites
 
@@ -29,7 +29,6 @@ npm run start
 ```
 
 - then go to the url in your browser: http://localhost:8090
-
 
 ## Test
 
