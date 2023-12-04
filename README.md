@@ -50,4 +50,5 @@ npm run test
 ## License
 
 This application was developed as part of the Web Application Development Course in Reichman University.  
-I don't own any of the photos in this app, except for the admin's profile picture.
+This project is licensed under the MIT License (see License.md for more details).  
+I don not own any of the photos in this app, except for the admin's profile picture.
