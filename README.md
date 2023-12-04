@@ -22,17 +22,17 @@ npm install
 
 ## Run
 
-- Run this command in your terminal from `/server` directory and
+- Run this command in your terminal from `/server` directory:
 
 ```
 npm run start
 ```
 
-- then go to the url in your browser: http://localhost:8090
+- Then go to this url in your browser: http://localhost:8090
 
 ## Test
 
-run the following command in your terminal from `/server` directory:
+Run the following command in your terminal from `/server` directory:
 
 ```
 npm run test
@@ -40,7 +40,7 @@ npm run test
 
 ## More about this project
 
-- More information in file: `/server/public/readme.html`
+- More information about this project can be found in file: `/server/public/readme.html`
 - Available also after installing the server at: http://localhost:8090/readme.html
 
 ## Author
